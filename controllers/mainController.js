@@ -1,10 +1,21 @@
 var mysql = require('mysql');
+
+//heroku setup
+var connection = mysql.createConnection({
+    host     : 'us-cdbr-iron-east-04.cleardb.net',
+    user     : 'b0a538b423b097',
+    password : '073bb642',
+    database : 'heroku_b5ae7a8579f1d0a'
+});//*/
+
+//local setup
+/*
 var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : '021274',
     database : 'HSS403'
-});
+});//*/
 
 //load models
 
