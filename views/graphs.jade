@@ -1,0 +1,178 @@
+extends layout
+
+block content
+    .container-fluid
+        .row
+            .col-md-4
+                h2 Leading Factors of Homelessness
+                ul.list-group
+                    li.list-group-item Unemployment/Can't Find Work
+                    li.list-group-item Housing Cost Too High
+                    li.list-group-item Personal Loss
+                    li.list-group-item Eviction
+                    li.list-group-item Domestic Violence
+                    li.list-group-item Mental Illness
+                    li.list-group-item Substance Abuse
+                    li.list-group-item Medical problems/physical or developmental disability
+                .col-md-12#mapInfo
+                    h4 More Homeless Details From Map (2013)
+                    ul.list-group
+                        li.list-group-item Sheltered: 1,482
+                        li.list-group-item Unsheltered: 164
+                        li.list-group-item Individuals: 888
+                        li.list-group-item Persons in Families: 758
+                        li.list-group-item Family Households: 262
+                        li.list-group-item Family Households - Unsheltered: 8
+                        li.list-group-item Chronically Homeless: 207
+                        li.list-group-item Chronically Homeless - Unsheltered: 48
+                        li.list-group-item Chronically Homeless - Individuals: 190
+                        li.list-group-item Chronically Homeless - Persons In Families: 17
+                        li.list-group-item Veterans: 67
+                        li.list-group-item Veterans - Unsheltered: 17
+
+            .col-md-4
+                h2 Newark Homeless Map
+                img(src='/images/NewarkHomelessMap.png', alt='Newark Homeless Map Image', class='img-responsive', width='100%', height='100%' )
+            .col-md-4
+                .row
+                    .col-md-12#popChart
+                .row
+                    .col-md-12#keyInfo
+                        h4 Key Points
+                        ul.list-group
+                            li.list-group-item Total Homeless in Newark Estimate (2013): 1655
+                            li.list-group-item Newark Homeless Rate Estimate (2013): 0.6%
+        .row
+            .col-md-5.col-md-offset-4#largePgBrk
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                h1 ...compared to New York
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+        .row
+            .col-md-12
+                .row
+                    .col-md-10.col-md-offset-1#NYGraph
+                .row
+                    .col-md-8.col-md-offset-2
+                        p
+                            |From looking at the "Total Unsheltered Individuals" column group, specifically the '2012'
+                            |column, New York only has double the homeless population that Newark does, even though
+                            |New York's population is many times that of Newark's.
+        .row
+            .col-md-6.col-md-offset-4#largePgBrk
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                h1 Newark Unemployment Rates
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+        .row
+            .col-md-12
+                .row
+                    .col-md-10.col-md-offset-1#unemploymenyGraph
+                .row
+                    .col-md-8.col-md-offset-2
+                        p
+                            |This Graph shows monthly unemployment rates from the year 2005 to 2015.
+                            |Unemlpoyment is one of the leading causes of homelessness in Newark.
+        .row
+            .col-md-6.col-md-offset-3#largePgBrk
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                h1 Newark Income and Poverty Data
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+        .row
+            .col-md-5.col-md-offset-1#povertyHistoryGraph
+
+            .col-md-5#povertyAgeGraph
+
+        .row
+            .col-md-6.col-md-offset-4#largePgBrk
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                h1 Newark Housing Data
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+        .row
+            .col-md-5#housingChart1
+
+            .col-md-7#housingChart2

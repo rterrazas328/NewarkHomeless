@@ -1,0 +1,47 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #337AB7;
+  color: white;
+}
+
+li {
+  color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#jumb {
+  height: 30em;
+  width: 97.2%;
+  position: absolute;
+  background-image: url('../images/Newark-Homeless-Man.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.jumbotron {
+  height: 30em;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+
+}
+
+
+#mainPar {
+  border-style: double;
+  /*background-color: #EDE6E7;*/
+}
+
+#mapInfo {
+  border-style: double;
+  height: 18em;
+  overflow: scroll;
+}
+
+#keyInfo {
+  height: 18em;
+}
