@@ -45,3 +45,8 @@ a {
 #keyInfo {
   height: 18em;
 }
+
+#midInfo {
+  border-style: double;
+  height: 13em;
+}

@@ -27,3 +27,18 @@ nav( class='navbar navbar-default' )
 
                     li( class='active')
                         a(href='/graphs') Graphs
+                else
+                    li
+                        a( href='/') Home
+                            span( class='sr-only') (current)
+
+                    li
+                        a(href='/graphs') Graphs
+
+            ul( class='nav navbar-nav navbar-right')
+                if (title == 'sources')
+                    li( class='active')
+                        a( href='/sources') Sources
+                else
+                    li
+                        a( href='/sources') Sources

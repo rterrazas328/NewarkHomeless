@@ -76,7 +76,7 @@ $.ajax({
                 tooltip: {
                     formatter: function () {
                         return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
-                            'Dollar Amount: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+                            'Number of People: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
                     }
                 },
 

@@ -82,7 +82,7 @@ $.ajax({
             }
         },
         tooltip: {
-            shared: true
+            shared: false
         },
         plotOptions: {
             area: {

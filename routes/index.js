@@ -6,6 +6,8 @@ var mainController = require('../controllers/mainController');
 router.get('/', mainController.getIndex);
 router.get('/graphs', mainController.getGraphs);
 router.get('/popChart', mainController.getPopChartData);
+router.get('/sources', mainController.getSources);
+
 router.get('/NYGraph', mainController.getNYGraphData);
 router.get('/unemploymentGraph', mainController.getUnemploymentGraphData);
 router.get('/povertyHistoryGraph', mainController.getEconomicData);

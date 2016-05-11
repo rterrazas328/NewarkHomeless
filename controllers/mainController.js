@@ -34,6 +34,9 @@ exports.getIndex = function(req, res, next){
 exports.getGraphs = function (req, res, next) {
     res.render('graphs', { title: 'graphs' });
 }
+exports.getSources = function (req, res, next) {
+    res.render('sources', { title: 'sources' });
+}
 
 exports.getPopChartData = function (req, res, next) {
     connection.query("SELECT `city`,`total_population`,`male`,`female` FROM `NewJerseypeoplebycity` WHERE city='Newark'", function(err, rows, fields) {
