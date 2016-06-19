@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var pool = mysql.createPool({
-    host     : 'ricardoterrazas.com',
-    user     : 'HSS_public',//HSS_public
-    password : 'beaches_5@ndY_Cj3#',//beaches_5@ndY_Cj3#
-    database : 'HSS403'
+    host     : 'us-cdbr-iron-east-04.cleardb.net',
+    user     : 'b0a538b423b097',//HSS_public
+    password : '073bb642',//beaches_5@ndY_Cj3#
+    database : 'heroku_b5ae7a8579f1d0a'
 });//*/
 
 var LRU = require("lru-cache");
