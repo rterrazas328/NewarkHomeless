@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var pool = mysql.createPool({
-    host     : 'us-cdbr-iron-east-04.cleardb.net',
-    user     : 'b0a538b423b097',//HSS_public
-    password : '073bb642',//beaches_5@ndY_Cj3#
-    database : 'heroku_b5ae7a8579f1d0a'
+    host     : process.env.DB_HOST,//'us-cdbr-iron-east-04.cleardb.net',
+    user     : process.env.DB_USER,//'b0a538b423b097',//HSS_public
+    password : process.env.DB_PASSWORD,//'073bb642',//beaches_5@ndY_Cj3#
+    database : 'hss_newark'//'heroku_b5ae7a8579f1d0a'
 });//*/
 
 var LRU = require("lru-cache");
