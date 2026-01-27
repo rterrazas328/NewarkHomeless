@@ -1,5 +1,7 @@
 var mysql = require('mysql');
 
+console.log(process.env.DB_USER);
+
 var pool = mysql.createPool({
     host     : process.env.DB_HOST,//'us-cdbr-iron-east-04.cleardb.net',
     user     : process.env.DB_USER,//'b0a538b423b097',//HSS_public
