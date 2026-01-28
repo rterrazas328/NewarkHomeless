@@ -161,7 +161,7 @@ $.ajax({
     console.log(year2010);
     console.log(year2009);//*/
 
-    $(function () {
+    //$(function () {
         $('#NYGraph').highcharts({
             chart: {
                 type: 'column'
@@ -214,5 +214,5 @@ $.ajax({
 
             }]
         });
-    });//*/
+    //});//*/
 });

@@ -47,7 +47,7 @@ $(function () {
             versionsData.push({
                 name: data[i].drilldown.categories[j],
                 y: data[i].drilldown.data[j],
-                color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                color: new Highcharts.Color(data[i].color).brighten(brightness).get()
             });
         }
     }

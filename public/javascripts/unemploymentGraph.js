@@ -10,13 +10,12 @@ $.ajax({
     for (var i=0; i<resultObj['results'].length; i++){
         var temp = [];
         var date = resultObj['results'][i]['date'];
-        temp[0] = Date.parse(date);
+        temp[0] = Date.parse(date).toString();
         temp[1] = resultObj['results'][i]['unemployment_rate'];
         data[i] = temp;
     }
-
-    $(function () {
-        $('#unemploymenyGraph').highcharts({
+    //$(function () {
+        $('#unemploymentGraph').highcharts({
             chart: {
                 zoomType: 'x'
             },
@@ -48,7 +47,7 @@ $.ajax({
                         },
                         stops: [
                             [0, Highcharts.getOptions().colors[0]],
-                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            [1, new Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
                         ]
                     },
                     marker: {
@@ -70,5 +69,5 @@ $.ajax({
                 data: data
             }]
         });
-    });
+    //});
 });

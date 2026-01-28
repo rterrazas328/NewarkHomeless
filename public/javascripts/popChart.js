@@ -6,10 +6,11 @@
 
     }).done(function(resultObj) {
         var popChartData = resultObj['results'];
+        console.log(popChartData);
 
-        $(function () {
+        //$(function () {
 
-            $(document).ready(function () {
+            //$(document).ready(function () {
 
                 // Build the chart
                 $('#popChart').highcharts({
@@ -47,8 +48,8 @@
                         }]
                     }]
                 });
-            });
-        });
+            //});
+        //});
     });
 
 

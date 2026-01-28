@@ -5,7 +5,7 @@ $.ajax({
 
 }).done(function(resultObj) {
 
-    $(function () {
+    //$(function () {
         // Age categories
         var categories = ['0-4', '5', '6-11', '12-14',
             '15', '16-17', '18-24', '25-34', '35-44',
@@ -33,7 +33,7 @@ $.ajax({
         }
         //console.log(male2013);
         //console.log(female2013);
-        $(document).ready(function () {
+        //$(document).ready(function () {
             $('#povertyAgeGraph').highcharts({
                 chart: {
                     type: 'bar'
@@ -88,7 +88,7 @@ $.ajax({
                     data: female2013
                 }]
             });
-        });
+        //});
 
-    });
+    //});
 });

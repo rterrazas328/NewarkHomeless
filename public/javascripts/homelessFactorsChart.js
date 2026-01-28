@@ -1,4 +1,4 @@
-$(function () {
+//$(function () {
     $('#homelessFactorsChart').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -51,4 +51,4 @@ $(function () {
             }]
         }]
     });
-});
+//});
